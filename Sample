@@ -1,1 +1,14 @@
 
+function Person() {
+    this.country = 'India',
+    this.population = '1m,
+    this.sayName = function () {
+        console.log(this.population)
+        let innerFunc = () => {
+            console.log(this.country);
+        }
+        innerFunc();
+    }
+}
+const x = new Person();
+x.sayName();
